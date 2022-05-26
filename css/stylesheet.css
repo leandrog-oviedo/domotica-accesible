@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.title {
+    background-color: aqua;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2rem;
+}
+
+.gridContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 5px;
+}
+
+.navBar {
+    grid-column: 1/5;
+    text-decoration: none;
+    text-align: right;
+    background-color: blueviolet;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+li {
+    display: inline;
+    padding: 1rem;
+}
+
+.generalInfo,.lamps {
+    grid-row: 1/6;
+    grid-column: 1/5;
+    background-color: lightcoral;
+}
+
+.foot {
+    grid-row: 6/7;
+    grid-column: 1/5;
+    background-color: chartreuse;
+    text-align: center;
+}
+
+.contTable {
+    table-layout: fixed;
+    width: 90%;
+    margin: auto;
+    border-collapse: collapse;
+    border: 2px solid black;
+    
+}
+
+tr:nth-child(even) {
+    background-color: lightgray;
+    border: 1px solid black;
+    text-align: right;
+
+}
+
+tr:nth-child(even) {
+    background-color:#dfe6e6;
+    border: 1px dotted black;
+    text-align: right;
+}
+
+td {
+    border: 1px solid black;
+    text-align: center;
+} 
+
+.tableRGB {
+    background-color: blueviolet;
+}
+.table2700{
+    background-color: #F2E9BD;
+
+}
+.table4500{
+    background-color: #dadada;
+}
+.table6500{
+    background-color: #d4edfc;
+}

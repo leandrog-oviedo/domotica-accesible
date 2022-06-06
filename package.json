@@ -1,0 +1,25 @@
+{
+  "name": "sonoff-distrib",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css":"node-sass --include-path scss scss/styles.scss css/stylesheet.css",
+    "watch-css":"nodemon -e scss -x \"npm run build-css\" "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leandrog-oviedo/domotica-accesible.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leandrog-oviedo/domotica-accesible/issues"
+  },
+  "homepage": "https://github.com/leandrog-oviedo/domotica-accesible#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.16"
+  }
+}

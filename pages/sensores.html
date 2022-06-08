@@ -5,57 +5,102 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/stylesheet.css">
     <title>Domótica accesible</title>
 </head>
 
-<body>
+
+
+
+
+
+<body class="bg-dark text-light">
     <header class="title">
-        <h1>Domótica accesible</h1>
+        <h1 class="h1 text-center">Domótica accesible</h1>
     </header>
-
-    <nav class="navBar">
-        <ul class="listNav">
-            <li>introducción</li>
-            <li>Servicios</li>
-            <li>Productos</li>
-            <li>Contacto</li>
-        </ul>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">Inicio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Productos
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="../pages/lamparas.html">Lámparas</a></li>
+                            <li><a class="dropdown-item" href="../pages/teclas.htm">Teclas</a></li>
+                            <li><a class="dropdown-item" href="../pages/switchs.html">Switches</a></li>
+                            <li><a class="dropdown-item" href="../pages/tomacorriente.html">Tomacorriente</a></li>
+                            <li><a class="dropdown-item" href="../pages/sensores.html">Sensores</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
-    <section>
-        <article>
-            <h2>Sensores</h2>
-            <div><img src="../" alt="Teclas smart para caja5x10"></div>
-            <p>
-                Los sensores son dispositivos que nos permiten comunicarle a nuestros dispositivos inteligentes en estado del mundo exterior, para que estos mediante automatizaciones previamente configuradas puedan generar acciones físicas, como por ejemplo disparar un sistema de riego si la humedad de suelo está por debajo del nivel indicado, o encender una luz al sensar la apertura de una puerta, etc.
-                A continuación expondremos los sensores disponibles.
 
-            </p>
-        </article>
-        <article>
-            <h2>DW2 WIFI</h2>
-            <div><img src="" alt=""></div>
-            <p>Sensor magnético de apertura de puerta / ventana de la marca Sonoff, este sensor nos permite conocer el estado de cualquier abertura de nuestro hogar. Puede notificar al teléfono la apertura o cierre y se pueden generar automatismos con el cambio de estado. Es completamente inalámbrico, ya que es operado mediante dos pilas AAA. Tiene notificacion de baja batería. Es capaz de almacenar todas las aperturas y cierre de los últimos 90 días. Su uso está indicado únicamente para el interior. No necesitamos de ninguna fijación mecánica gracias a la cinta doble contacto de 3M. Funciona con e-WLink +IFTTT, con la posibilidad de preguntar tanto a google como a alexa en qué estado se encuentra la abertura sensada.
-            </p>
-        </article>
-        <article>
-            <h2>SI7021</h2>
-            <div><img src="" alt=""></div>
-            <p>Sensor de temperatura y humedad de la marca Sonof, es capaz de medir temperaturas de entre -10ºC hasta 85ºC (+- 0.4ºC)y humedad entre 0 al 80% (+- 3%), cuenta con cable de 50cm para poder lograr una mejor ubicación del mismo. Lo podemos conectar al switch TH16 directamente, su uso es de interior. </p>
-        </article>
-        <article>
-            <h2>DS18B20</h2>
-            <div><img src="" alt=""></div>
-            <p>Sensor de temperatura sumergible de acero inoxidable de la marca Sonoff, es capaz de medir temperatura en
-                un rango de -55ºC a 125ºC, cuenta cable de 1 metro de largo, se conecta sin intermediarios al switch
-                TH16. </p>
-        </article>
-        <article>
-            <h2>MS01</h2>
-            <div><img src="" alt=""></div>
-            <p>Sensor de humedad de suelo de la marca Sonoff, puede medir entre 0 a 100% de humedad relativa, operando en ambientes entre los 0ºC a 60ºC, gracias a su protección IP55 está protegido de los elementos. Cuenta con un cable de 50cm que puede ser extendido hasta los 10m con el accesorio AL560, su conexión se realiza al switch TH16, pudiendo generar automatismos para un sistema de riego.</p>
-        </article>
-    </section>
-
+    <main class="container">
+        <section class="lamps row">
+            <article class="col-md-12">
+                <h2 class="h2 text-center">Sensores</h2>
+                <p class="text-center">Los sensores son dispositivos que nos permiten comunicarle a nuestros
+                    dispositivos inteligentes en estado del mundo exterior, para que estos mediante automatizaciones
+                    previamente configuradas puedan generar acciones físicas, como por ejemplo disparar un sistema de
+                    riego si la humedad de suelo está por debajo del nivel indicado, o encender una luz al sensar la
+                    apertura de una puerta, etc.
+                    A continuación expondremos los sensores disponibles.</p>
+            </article>
+            <article class="row d-flex justify-content-center">
+                <h2>DW2 WIFI</h2>
+                <div><img class="col-1" src="../assets/dw2-wifi.png" alt=""></div>
+                <p class="col-12">Sensor magnético de apertura de puerta / ventana de la marca Sonoff, este sensor nos permite conocer
+                    el estado de cualquier abertura de nuestro hogar. Puede notificar al teléfono la apertura o cierre y
+                    se pueden generar automatismos con el cambio de estado. Es completamente inalámbrico, ya que es
+                    operado mediante dos pilas AAA. Tiene notificacion de baja batería. Es capaz de almacenar todas las
+                    aperturas y cierre de los últimos 90 días. Su uso está indicado únicamente para el interior. No
+                    necesitamos de ninguna fijación mecánica gracias a la cinta doble contacto de 3M. Funciona con
+                    e-WLink +IFTTT, con la posibilidad de preguntar tanto a google como a alexa en qué estado se
+                    encuentra la abertura sensada.
+                </p>
+            </article>
+            <article class="row d-flex justify-content-center">
+                <h2>SI7021</h2>
+                <div><img class="col-1" src="../assets/si7021.png" alt=""></div>
+                <p class="col-12">Sensor de temperatura y humedad de la marca Sonof, es capaz de medir temperaturas de entre -10ºC
+                    hasta 85ºC (+- 0.4ºC)y humedad entre 0 al 80% (+- 3%), cuenta con cable de 50cm para poder lograr
+                    una mejor ubicación del mismo. Lo podemos conectar al switch TH16 directamente, su uso es de
+                    interior. </p>
+            </article>
+            <article class="row d-flex justify-content-center">
+                <h2>DS18B20</h2>
+                <div><img class="col-1" src="../assets/ds18b20.png" alt=""></div>
+                <p class="col-12">Sensor de temperatura sumergible de acero inoxidable de la marca Sonoff, es capaz de medir
+                    temperatura en
+                    un rango de -55ºC a 125ºC, cuenta cable de 1 metro de largo, se conecta sin intermediarios al switch
+                    TH16. </p>
+            </article>
+            <article class="row d-flex justify-content-center">
+                <h2>MS01</h2>
+                <div><img class="col-1" src="../assets/ms01.png" alt=""></div>
+                <p class="col-12">Sensor de humedad de suelo de la marca Sonoff, puede medir entre 0 a 100% de humedad relativa,
+                    operando en ambientes entre los 0ºC a 60ºC, gracias a su protección IP55 está protegido de los
+                    elementos. Cuenta con un cable de 50cm que puede ser extendido hasta los 10m con el accesorio AL560,
+                    su conexión se realiza al switch TH16, pudiendo generar automatismos para un sistema de riego.</p>
+            </article>
+        </section>
+        <footer class="foot">Uso interno LM electroluz y Oviedo Mantenimientos y Servicios.</footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+        </script>
 </body>
 
 </html>

@@ -11,24 +11,46 @@
     <title>Domótica accesible</title>
 </head>
 
-<body>
+<body class="bg-dark text-secondary">
 
-    <header class="title">
+    <header class="h1 text-center">
         <h1>Domótica accesible</h1>
     </header>
 
-    <nav class="navBar">
-        <ul class="listNav">
-            <li>introducción</li>
-            <li>Servicios</li>
-            <li>Productos</li>
-            <li>Contacto</li>
-        </ul>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html">Inicio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Productos
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="./pages/lamparas.html">Lámparas</a></li>
+                            <li><a class="dropdown-item" href="./pages/teclas.htm">Teclas</a></li>
+                            <li><a class="dropdown-item" href="./pages/switchs.html">Switches</a></li>
+                            <li><a class="dropdown-item" href="./pages/tomacorriente.html">Tomacorriente</a></li>
+                            <li><a class="dropdown-item" href="./pages/sensores.html">Sensores</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
+
+
 
     <main class="gridContainer">
         <section class="generalInfo">
-            <h2>¿Qué es la domótica?</h2>
+            <h2 class="h2 text-start">¿Qué es la domótica?</h2>
             <p>Se denomina domótica al conjunto de sistemas capaces de automatizar una vivienda, mediante la gestión de
                 las energías, las comunicaciones, la iluminación y todos los elementos de una vivienda, con el fin de
                 aportar seguridad, bienestar y confort.
@@ -37,7 +59,7 @@
                 cableadas o inalámbricas y cuyo control goza de cierta ubicuidad, desde dentro y fuera del hogar.
             </p>
             <article>
-                <h2>¿Para que nos sirve?</h2>
+                <h2 class="h2 text-start">¿Para que nos sirve?</h2>
                 <p>La domótica nos permite controlar una serie de sistemas y tecnologías para realizar un uso más
                     racional de la climatización, la electricidad, el agua… e incluso los sistemas de seguridad. Con la
                     regulación y el control de los sistemas de calefacción y aire acondicionado, conmutando y regulando
@@ -47,7 +69,7 @@
                 </p>
             </article>
             <article>
-                <h2>¿Cómo funciona?</h2>
+                <h2 class="h2 text-start">¿Cómo funciona?</h2>
                 <p>Como ya hemos comentado, la domótica es la integración de una serie de tecnologías o sistemas que nos
                     permiten automatizar la vivienda con el fin de conseguir el máxima eficiencia energética, un óptimo
                     confort y optimizar el uso de la energía que necesitamos. Para conocer cómo funciona una casa
@@ -55,30 +77,29 @@
                     unicamente los sistemas que podemos proveerle en este momento.
                 </p>
                 <dl>
-                    <dt>Lámparas</dt>
+                    <dt class="h3 text-start"> <a href="./pages/lamparas.html">Lámparas</a></dt>
                     <dd>Lámparas con zócalo E27 para portalámparas común, o dicroicas con zócalo GU10. Estas son la
                         puerta de entrada a la domótica por su bajo costo, nos permite encenderlas y apagarlas desde
                         nuestro dispositivo móvil tanto con android e ios, así como también generar automatizaciones.
                     </dd>
-                    <dt>Teclas</dt>
+                    <dt class="h3 text-start"> <a href="./pages/teclas.htm">Teclas</a></dt>
                     <dd>Las teclas inteligentes son el reemplazo directo de las teclas tradicionales, teniendo como
                         ventaja el poder encender y apagar la iluminación del hogar tanto desde la tecla físicamente,
                         como desde nuestros dispositivos móviles, son capaces de generar automatismos.
                     </dd>
-                    <dt>Switch</dt>
+                    <dt class="h3 text-start"> <a href="./pages/switchs.html">Switches</a></dt>
                     <dd>Contamos con muchos modelos distintos para cada necesidad, pudiendo manejar desde 150W hasta
                         3500W, poseen desde uno hasta 4 canales. Son extremadamente versátiles, pudiendo disparar
                         acciones a través de diferentes sensores, por variaciones de voltaje o potencia, teniendo
                         también la posibilidad de convertir una tecla de punto común en una inteligente, todas estas
                         funcionalidades varían dependiendo del modelo.
                     </dd>
-                    <dt>Tomacorrientes</dt>
+                    <dt class="h3 text-start"> <a href="./pages/tomacorriente.html">Tomacorriente</a></dt>
                     <dd>No permiten hacer inteligentes diferentes tipos de electrodomésticos del hogar, como por ejemplo
                         que la pava eléctrica se prenda por las mañanas, la lámpara de pie del living se prenda por las
                         noches, etc.
-
                     </dd>
-                    <dt>Sensores</dt>
+                    <dt class="h3 text-start"> <a href="./pages/sensores.html">Sensores</a></dt>
                     <dd>Se comunican directamente con nuestros dispositivos, mediante estos podemos indicarle la
                         temperatura, humedad del ambiente o de suelo, etc. Para que el switch nos active por ejemplo el
                         sistema de riego cuando la humedad del suelo sea baja.
@@ -88,7 +109,7 @@
             </article>
         </section>
     </main>
-    <footer class="foot"> soy un footer</footer>
+    <footer class="foot">Uso interno LM electroluz y Oviedo Mantenimientos y Servicios.</footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
     </script>

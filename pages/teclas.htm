@@ -5,35 +5,75 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/stylesheet.css">
     <title>Domótica accesible</title>
 </head>
 
-<body>
-
+<body class="bg-dark text-light">
     <header class="title">
-        <h1>Domótica accesible</h1>
+        <h1 class="h1 text-center">Domótica accesible</h1>
     </header>
-
-    <nav class="navBar">
-        <ul class="listNav">
-            <li>introducción</li>
-            <li>servicios</li>
-            <li>Productos</li>
-            <li>Contacto</li>
-        </ul>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">Inicio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Productos
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="../pages/lamparas.html">Lámparas</a></li>
+                            <li><a class="dropdown-item" href="../pages/teclas.htm">Teclas</a></li>
+                            <li><a class="dropdown-item" href="../pages/switchs.html">Switches</a></li>
+                            <li><a class="dropdown-item" href="../pages/tomacorriente.html">Tomacorriente</a></li>
+                            <li><a class="dropdown-item" href="../pages/sensores.html">Sensores</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
-    <main class="gridContainer">
-        <section class="generalInfo">
-            <article>
-                <h2>Teclas</h2>
-                <div><img src="../assets/teclas-macro.png" alt="Teclas smart para caja5x10"></div>
-                <p>
-                    Las teclas smart reemplazan directamente a las teclas de nuestro hogar, se colocan en las cajas 5x10
+
+    <main class="container">
+        <section class="lamps row">
+            <article class="col-md-12">
+                <h2 class="h2 text-center">Teclas</h2>
+                <p class="text-center">Las teclas smart reemplazan directamente a las teclas de nuestro hogar, se
+                    colocan en las cajas 5x10
                     tradicionales, necesitando tener si o si en caja una fase y un neutro. Podemos controlarlas
                     físicamente desde la misma llave o podemos controlarlas desde un dispositivo móvil android o ios.
                 </p>
-                <h3>Lo positivo.</h3>
+                <div class="row d-flex justify-content-center">
+                    <div class="col-6 col-md-4 col-xl-3"> <img class="image" src="../assets/blanco-dim.png"
+                            alt="Teclas smart para caja5x10"> </div>
+                    <div class="col-6 col-md-4 col-xl-3"> <img class="image" src="../assets/blanco-1ch.png"
+                            alt="Teclas smart para caja5x10"> </div>
+                    <div class="col-6 col-md-4 col-xl-3"> <img class="image" src="../assets/blanco-2ch.png"
+                            alt="Teclas smart para caja5x10"> </div>
+                    <div class="col-6 col-md-4 col-xl-3"> <img class="image" src="../assets/blanco-3ch.png"
+                            alt="Teclas smart para caja5x10"> </div>                
+                    <div class="col-6 col-md-4 col-xl-3"> <img class="image" src="../assets/negro-dim.png"
+                            alt="Teclas smart para caja5x10"> </div>
+                    <div class="col-6 col-md-4 col-xl-3"> <img class="image" src="../assets/negro-1ch.png"
+                            alt="Teclas smart para caja5x10"> </div>
+                    <div class="col-6 col-md-4 col-xl-3"> <img class="image" src="../assets/negro-2ch.png"
+                            alt="Teclas smart para caja5x10"> </div>
+                    <div class="col-6 col-md-4 col-xl-3"> <img class="image" src="../assets/negro-3ch.png"
+                            alt="Teclas smart para caja5x10"> </div>
+                </div>
+
+            </article>
+            <article class="col-md-6">
+                <h3 class="h3 text-center text-success">Lo positivo.</h3>
                 <ul>
                     <li>Podemos prender y apagar las luces del hogar físicamente y a distancia.</li>
                     <li>Podemos controlarlas aunque se corte el internet.</li>
@@ -42,13 +82,18 @@
                     <li>Podemos controlar la retroiluminación para que solo encienda de noche.</li>
                     <li>Nos permiten controlar encendido, apagado, timer, encendido/apagado automático.</li>
                 </ul>
-                <h3>Lo negativo.</h3>
+            </article>
+            <article class="col-md-6 ">
+                <h3 class="h3 text-center text-danger">Lo Negativo.</h3>
                 <ul>
                     <li>Su costo es un poco más elevado que las lámparas</li>
                     <li>Necesitamos un electricista profesional para asegurar su buen conexionado y funcionamiento</li>
                 </ul>
-                <table class="contTable">
-                    <tr>
+            </article>
+            <article>
+                <table
+                    class="table table-dark table-striped table-hover table-bordered table-responsive text-center border-secondary col-10">
+                    <tr class="sticky-top text-success">
                         <th>Canales</th>
                         <th>1 canal con dimmer</th>
                         <th>1 canal</th>
@@ -96,7 +141,10 @@
             </article>
         </section>
     </main>
-    <footer class="foot"> soy un footer</footer>
+    <footer class="foot">Uso interno LM electroluz y Oviedo Mantenimientos y Servicios.</footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>

@@ -5,32 +5,61 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/stylesheet.css">
     <title>Domótica accesible</title>
 </head>
 
-<body>
-
+<body class="bg-dark text-light">
     <header class="title">
-        <h1>Domótica accesible</h1>
+        <h1 class="h1 text-center">Domótica accesible</h1>
     </header>
-
-    <nav class="navBar">
-        <ul class="listNav">
-            <li>introducción</li>
-            <li>servicios</li>
-            <li>Productos</li>
-            <li>Contacto</li>
-        </ul>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">Inicio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Productos
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="../pages/lamparas.html">Lámparas</a></li>
+                            <li><a class="dropdown-item" href="../pages/teclas.htm">Teclas</a></li>
+                            <li><a class="dropdown-item" href="../pages/switchs.html">Switches</a></li>
+                            <li><a class="dropdown-item" href="../pages/tomacorriente.html">Tomacorriente</a></li>
+                            <li><a class="dropdown-item" href="../pages/sensores.html">Sensores</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
-    <main class="gridContainer">
-        <section class="generalInfo">
-            <article>
-                <h2>Tomacorrientes</h2>
-                <div><img src="../" alt="Tomacorriente"></div>
-                <p>Nos permiten hacer inteligentes diferentes tipos de electrodomésticos del hogar, como por ejemplo que
+
+    <main class="container">
+        <section class="lamps row">
+            <article class="col-md-12">
+                <h2 class="h2 text-center">Tomacorrientes</h2>
+                <p class="text-center">Nos permiten hacer inteligentes diferentes tipos de electrodomésticos del hogar, como por ejemplo que
                     la pava eléctrica se prenda por las mañanas, la lámpara de pie del living se prenda por las noches,
                     etc.</p>
-                h3>Lo positivo.</h3>
+                <div class="d-flex justify-content-center">
+                    <div class="col-md-4 col-xl-3"> <img class="image" src="../assets/toma-macro-tuya.png"
+                            alt="Imagen tomacorriente Macroled con isotipo Tuya"> </div>
+                    <div class="col-md-4 col-xl-3"> <img class="image" src="../assets/toma-macro.png"
+                            alt="Imagen tomacorriente Macroled"></div>                    
+                </div>
+                
+            </article>
+            <article class="col-md-6">
+                <h3 class="h3 text-center text-success">Lo positivo.</h3>
                 <ul>
                     <li>Podemos prender y apagar el dispositivo de forma física desde su botón o lo podemos controlar
                         desde nuestro teléfono o tablet tanto android e ios.</li>
@@ -39,7 +68,9 @@
                     <li>Nos permiten controlar encendido, apagado, timer, encendido/apagado automático.</li>
                     <li>Soporta cargas de hasta 10A.</li>
                 </ul>
-                <h3>Lo negativo.</h3>
+            </article>
+            <article class="col-md-6 ">
+                <h3 class="h3 text-center text-danger">Lo Negativo.</h3>
                 <ul>
                     <li>No nos permite monitorear voltaje o corriente como si algunos modelos de switch.</li>
                     <li>Es unicamente de uso interior, para aplicaciones exteriores será necesario pensar en un switch
@@ -49,8 +80,9 @@
                 </ul>
             </article>
             <article>
-                <table class="contTable">
-                    <tr>
+                <table
+                    class="table table-dark table-striped table-hover table-bordered table-responsive text-center border-secondary col-10">
+                    <tr class="sticky-top text-success">             
                         <th>Características</th>
                         <th>ESX1-2073</th>
                     </tr>
@@ -101,6 +133,10 @@
                     </tr>
                 </table>
             </article>
+            <footer class="foot">Uso interno LM electroluz y Oviedo Mantenimientos y Servicios.</footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+</script>
 </body>
 
 </html>
